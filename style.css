@@ -34,12 +34,14 @@ header{
     position: relative;
     padding-top: 160px;
     padding-bottom: 140px;
+
 }
 
+
 header img{
-    display: inline-block !important;
-    border: 3px solid white;
-    padding: 5px;
+    
+    border: 1px solid white;
+    padding: 2px;
 }
 
 
@@ -128,14 +130,3 @@ header h2{
     padding-right: 10px;
     padding-left: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
