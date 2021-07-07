@@ -1,373 +1,443 @@
 <!DOCTYPE html>
-<html lang="en">
+ <html class="no-js" lang="en">  
 <head>
-	<meta charset="utf-8">
-	<title>Who am i ? </title>
-	 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	 
-	 <style>
-    
-    html, body {
-  margin:0;border:0;padding:0;
-  font-size:16px;
-  font-family: 'Poppins', sans-serif;
-  overflow-x:hidden;
-  position: relative;
-  vertical-align: baseline;
-  background-color: #7f5a83;
-background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
 
-}
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Raguani</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
 
- 
-h1 {font-size:40px;}
-h2 {font-size:36px;}
-h3 {font-size:30px;}
-h4 {font-size:24px;}
-h5 {font-size:20px;}
-h6 {font-size:18px;}
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-h2 {
-  padding-bottom: 14px;
-}
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
- 
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
 
- 
- 
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
 
-.tm-title {
-	color: #66CCFF;
-}
-
-.white {
-  color: #fff;
-}
-
-.about,.skills,
-.education,.languages,
-.contact, .experience {
-  padding: 40px;
-  min-height: 330px;
-}
-
-.education, .languages,
-.contact, .experience {
-  margin-top: 30px;
-}
-
- 
-  
-header {
-  text-align: center;
-  min-height: 400px;
-  overflow: hidden;
-  position: relative;
-  padding-top: 160px;
-  padding-bottom: 140px;
-}
-header img {
-    display: inline-block !important;
-    border: 3px solid white;
-    padding: 5px;
-	position: relative;
-    width: 500px;
-    height: 500px;
-    border-radius: 100%;
-}
-header h2 {
-  padding-top: 40px;
-}
-    
-             
- 
-.about {
-  background: #fff;
-  box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
-}
-         
-         
-         
-         
-
-/* skills section */
-.skills {
-  background: #3366CC;
-  color: #f5f5f5;
-}
-.skills .progress {
-  border-radius: 0px;
-  height: 4px;
-}
-.skills .progress .progress-bar-primary {
-  background: #204090;
-}
-.skills strong {
-  display: inline-block;
-  font-weight: normal;
-  padding-bottom: 6px;
-}
-         
-         
-         
-
-/* education section */
-.education {
-  background: #3366CC;
-  color: #f5f5f5;
-}
-.education .education-content {
-  padding-bottom: 14px;
-}
-.education h5 {
-  display: inline-block;
-}
-.education span {
-  padding-right: 10px;
-  padding-left: 20px;
-}
-
-         
-         
-/* languages section */
-.languages {
-  background: #fff; 
-}
-.languages ul {
-  padding: 10px;
-}
-.languages ul li {
-  padding-bottom: 6px;
-}
-
-         
-         
-         
-/* contact section */
-.contact {
-  background: #fff;  
-}
-.contact .fa {
-  padding-right: 6px;
-}
-
-         
-         
-         
-         
-/* experience section */
-.experience {
-  background: #3366CC;
-  color: #f5f5f5;
-}
- .experience-content {
-  padding-bottom: 14px;
-}
-.experience h5 {
-  display: inline-block;
-}
-.experience span {
-  padding-right: 10px;
-  padding-left: 20px;
-}
-
-         
-         
-         
-         
-         
-         
-/* footer section */
-footer {
-  color: #f9f9f9;
-  text-align: center;
-  padding-top: 140px;
-  padding-bottom: 100px;
-}
-         
-         
-         
-
-/* social icon section */
-.social-icons {
-  padding: 0;
-  margin: 0;
-}
-.social-icons li {
-  display: inline-block;
-  list-style: none;
-}
-.social-icons li a {
-  background: #3366CC;
-  border-radius: 50%;
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  transition: all 0.4s ease-in;
-  position: relative;
-  bottom: 10px;
-  top: 10px;
-}
-.social-icons li a:hover {
-  background: #202020;
-  color: #fff;
-}
-
-@media ( max-width: 980px ) {
-  .skills {
-    margin-top: 30px;
-  }
-}
-
-@media ( max-width: 360px ) {
-  header h1 {
-    font-size: 30px;
-  }
-  .about h2 {
-    font-size: 24px;
-  }
-  .education h4,
-  .experience h4 {
-    font-size: 20px;
-  }
-}
-    
-    
-    </style>
 </head>
-<body>
 
- 
-<!-- header section -->
-<header>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<img src="images/tm-easy-profile.jpg.png" class="img-responsive img-circle">
-				 
-				<h1 class="white">Soufiane Raguani</h1>
-				<h5 class="white">Developer</h5>
-			</div>
-		</div>
-	</div>
-</header>
+<body id="top">
 
-<!-- about and skills section -->
-<section class="container">
-	<div class="row">
-		<div class="col-md-6 col-sm-12">
-			<div class="about">
-				<h3 class="accent">Profile</h3>
-				
-				 <p>
-				    I am Soufiane Raguani, a developer and ethical hacker, I enjoy turning complex problems into simple, and and beautiful interfaces, when I do not code, you will find me on binance.
-				 </p>
-			</div>
-		</div>
-		<div class="col-md-6">
-			<div class="skills">
-				<h2 class="white">My Skills</h2>
-				<strong>Design</strong>
-				<span class="pull-right">70%</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar" 
-                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
-					</div>
-				<strong>Web dev (Full stack)</strong>
-				<span class="pull-right">85%</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar" 
-                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
-					</div>
-				<strong>Cyber security</strong>
-				<span class="pull-right">95%</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar" 
-                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
-					</div>
-			</div>
-		</div>
-	</div>
-</section>
+	<!-- header 
+   ================================================== -->
+   <header>   	
+   	<div class="row">
 
-<!-- education and languages -->
-<section class="container">
-	<div class="row">
-		<div class="col-md-8">
-			<div class="education">
-				<h2 class="white">Education</h2>					 
-						  <p class="education-description"> 
-						   A graduate of CCNA, Soufiane combines his studies with 2 years of experience in Web Dev,Cybersecurity and Design to produce creative and efficient websites for happy costomers around world.
-						</p>					 
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="languages">
-				<h2>Languages</h2>
-					<ul>
-						<li>Arabic</li>
-						<li>English</li>
-						<li>French</li>
-						<li>Spanish</li>
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+	   		<div class="logo">
+		         <a href="index.html">RAGUANI</a>
+		      </div>		      
+
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>		
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>		
 					</ul>
-			</div>
-		</div>
-	</div>
-</section>
+				</nav>    		
+   		</div> <!-- /top-bar --> 
+   		
+   	</div> <!-- /row --> 		
+   </header> <!-- /header -->
 
-<!-- contact and experience -->
-<!-- contact and experience -->
-<section class="container">
-	<div class="row">
-		<div class="col-md-8 col-sm-12">
-			<div class="experience">
-				<h2 class="white">Experiences</h2>
-					<div class="experience-content">
-				
-						<p class="education-description"> 
-					Fornax Groupe - My job(CTO at Fornax) requires the conversion of our clients ideas and data to pratical sites of beautiful interfaces,in addition to developing tools and strategies to always raise the company to the summit.
-						</p>
-					</div>
-			</div>
-		</div>
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
+
+   	<div class="intro-overlay"></div>	
+
+   	<div class="intro-content">
+   		<div class="row">
+
+   			<div class="col-twelve">
+
+	   			<h5>Hello, World.</h5>
+	   			<h1>I'm Soufiane Ragauni.</h1>
+
+	   			<p class="intro-position">
+	   				<span>Pentester</span>
+	   				<span>Developer</span> 
+	   			</p>
+
+	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
+
+   	<ul class="intro-social">        
+         <li><a href="https://www.facebook.com/soufiane.hetler.1-"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="https://instagram.com/exact_soufiane"><i class="fa fa-instagram"></i></a></li>
+		 <li><a href="https://twitter.com/soufiane_exact?s=09"><i class="fa fa-twitter"></i></a></li>
+		 <li><a href="https://github.com/raguani"><i class="fa fa-github"></i></a></li>
+
+      </ul> <!-- /intro-social -->      	
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About</h5>
+   			<h1>Let me introduce myself.</h1>
+
+   			<div class="intro-info">
+
+   				<img src="images/profile-pic.png" alt="Profile Picture">
+
+   				<p class="lead"> I am Soufiane Raguani,Ethical Hacker with strong skills in web development, I enjoy turning complex problems into simple, and and beautiful interfaces, when I do not code, you will find me on binance.</p>
+   			</div>   			
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Profile</h3>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Fullname:</strong>
+   					<span>Soufiane Raguani</span>
+   				</li>
+   				<li>
+   					<strong>Age:</strong>
+   					<span>17 Years old</span>
+   				</li>
+   				<li>
+   					<strong>Job:</strong>
+   					<span>Fornax CTO</span>
+   				</li>
+   				<li>
+   					<strong>Website:</strong>
+   					<span>www.fornax-a.com</span>
+   				</li>
+   				<li>
+   					<strong>Email:</strong>
+   					<span>raguani@protonmail.com</span>
+   				</li>
+
+   			</ul> <!-- /info-list -->
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<h3>Skills</h3>
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>Penetration testing</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent85"><span>85%</span></div>
+				   	<strong>Networking</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>Back-end</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>Python</strong>
+				   </li>
+				   <li>
+
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>Front-end</strong>
+				   </li>
+      
+				</ul> <!-- /skill-bars -->		
+
+   		</div>
+
+   	</div>
+
+   </section> <!-- /process-->    
+
+
+   <!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Resume</h5>
+   			<h1>More of my credentials.</h1>
+
+   			<p class="lead">CySA certification, I rely entirely on self-learning , and I combine my studies and 2 years of experience in web development, cybersecurity, to produce creative and safe websites for happy costomers around world.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2> Education</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<p>July 2020</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>CompTIA A+</h4>
+	   					<p>CompTIA A+ is the starting point for my career in IT. It validates foundational skills across a variety of devices and operating systems. It’s kind of like getting my information technology driver’s license.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<p>octobre 2020</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Network +</h4>
+	   					<p>Network+ ,At this point I focused on technical skills such as network troubleshooting, installation, configuration, routing protocols and security practices.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<p>April 2021</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>CySA+</h4>
+	    					<p>CompTIA cybersecurity analyst (CySA+) is a certification for my competence in cybersecurity that can perform data analysis and interpretation of results to identify vulnerabilities, threats and risks that threaten an organization. CompTIA CySA + is compliant with ISO 17024 standards and approved by the U.S. Department of Defense (DoD) to meet the requirements of Directive 8140/8570.01-M.</p>
+	   				</div>
+					   <div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+ 
+						<div class="timeline-header">
+							<p>July 2021</p>
+						</div>
+ 
+						<div class="timeline-content">
+							<h4>CEH</h4>
+							<p>Certified Ethical Hacker (CEH) is like a testimony of my knowledge in assessing the security of computer systems by searching for vulnerabilities and vulnerabilities in targeted systems, using the same knowledge and tools as malicious hackers .</p>
+						</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+   	
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Work Experience</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<p>Mars 2020 - May 2021</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Freelancer</h4>
+	   					<p> I use my creative skills software engineering / programming to design, build and improve websites. I understand the user experience and am able to build websites that are easy to understand, navigate, use and adhere to design standards and specifications.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<p>June 2021 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4> Fornax CTO</h4>
+	   					<p>This task requires using my solid background in providing software development services, leading a professional team, solving problems faster and finding the best solutions .</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
 		
-		<div class="col-md-4 col-sm-12">
-			<div class="contact">
-				<h2>Contact</h2>
-					<p><i class="fa fa-map-marker"></i> Martil, Tetouan, Morocco</p>
-					<p><i class="fa fa-phone"></i> +212 77208 4745</p>
-					<p><i class="fa fa-envelope"></i> raguani@protonmail.com</p>
-					<p><i class="fa fa-globe"></i> www.fornax-a.com</p>
-			</div>
-		</div>
+	</section> <!-- /features -->
  
-	</div>
-</section>
- 
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-sm-12">
-				<p>Copyright &copy; 2021 Raguani</p>
-				<ul class="social-icons">
-					<li><a href="https://www.facebook.com/soufiane.hetler.1" class="fa fa-facebook"></a></li>
-                    <li><a href="https://instagram.com/exact_soufiane?utm_medium=copy_link " class="fa fa-instagram"></a></li>
-					<li><a href="https://twitter.com/soufiane_exact?s=09" class="fa fa-twitter"></a></li>
-					<li><a href="https://api.whatsapp.com/send?phone=212772084745&text=" class="fa fa-whatsapp"></a></li>
-					<li><a href="https://github.com/raguani " class="fa fa-github"></a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</footer>
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
 
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contact</h5>
+   			<h1>I'd Love To Hear From You.</h1>
+
+   			<p class="lead">I'd be very happy to text you and respond .So don't hesitate to send a message or contact me.</p>
+
+   		</div> 
+   	</div> <!-- /section-intro -->
+
+
+   	<div class="row contact-info">
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-pin"></i>
+   			</div>
+
+   			<h5>Where to find me</h5>
+			   <p>
+	        Martil , Morocco </p>
+
+   		</div>
+
+   		<div class="col-four tab-full collapse">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>Email Me At</h5>
+
+   			<p> raguani@protonmail.com<br>		     
+			   </p>
+
+   		</div>
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-phone"></i>
+   			</div>
+
+   			<h5>Call Me At</h5>
+
+   			<p>Phone: (+212) 772 084745<br>
+			   	Whatsapp: (+212) 698 086782<br>
  
+			   </p>
+
+   		</div>
+   		
+   	</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">        
+			      <li><a href="https://www.facebook.com/soufiane.hetler.1 "><i class="fa fa-facebook"></i></a></li>
+			      <li><a href="https://instagram.com/exact_soufiane"><i class="fa fa-instagram"></i></a></li>
+			      <li><a href="https://github.com/raguani "><i class="fa fa-github"></i></a></li>
+			      <li><a href="https://twitter.com/soufiane_exact?s=09"><i class="fa fa-twitter"></i></a></li>
+			   </ul> 
+	      		
+	      </div>
+
+      	<div class="col-six tab-full">
+	      	<div class="copyright">
+		        	<span>© Copyright Raguani 2021.</span> 
+		        	<span>Design by <a href="https://ragauni.github.io/">Raguani</a></span>	         	
+		         </div>		                  
+	      	</div>
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
 
 </body>
+
 </html>
